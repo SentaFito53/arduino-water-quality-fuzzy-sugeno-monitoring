@@ -7,7 +7,7 @@ Proyek ini bertujuan untuk memonitor kualitas air dengan tiga parameter utama: *
 Sensor yang digunakan:
 
 * Sensor TDS Gravity
-* Sensor pH Gravity
+* Sensor pH
 * Sensor Turbidity
 
 Library yang digunakan:
