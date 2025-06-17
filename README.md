@@ -21,7 +21,7 @@ Library yang digunakan:
 
 * Arduino Mega 2560
 * Sensor TDS (DFRobot Gravity)
-* Sensor pH (DFRobot Gravity)
+* Sensor pH
 * Sensor Turbidity
 * LCD 20x4 I2C
 * Breadboard dan kabel jumper
