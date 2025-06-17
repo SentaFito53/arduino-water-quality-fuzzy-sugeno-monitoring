@@ -31,7 +31,7 @@ Library yang digunakan:
 1. Clone repositori ini:
 
 ```bash
-git clone https://github.com/yourusername/WaterQualityMonitoring.git
+git clone https://github.com/SentaFito53/arduino-water-quality-fuzzy-sugeno-monitoring.git
 ```
 
 2. Pastikan Anda sudah menambahkan custom library `GravityWaterQuality.h` ke dalam folder `libraries` Arduino Anda.
