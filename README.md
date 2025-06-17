@@ -117,5 +117,5 @@ Turbidity: 121 NTU
 * Jika data tampak tidak sesuai, ulangi proses kalibrasi.
 * Gunakan cairan standar pH dan EC untuk akurasi lebih tinggi.
 
-
+## Fungsi Keanggotaan Fuzzy
 ![Fungsi Keanggotaan Fuzzy](https://github.com/SentaFito53/arduino-water-quality-fuzzy-sugeno-monitoring/blob/main/Fungsi%20Keanggotaan.png)
