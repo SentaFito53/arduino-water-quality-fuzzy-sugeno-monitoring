@@ -116,11 +116,3 @@ Turbidity: 121 NTU
 * Pastikan semua sensor mendapat tegangan yang sesuai (5V).
 * Jika data tampak tidak sesuai, ulangi proses kalibrasi.
 * Gunakan cairan standar pH dan EC untuk akurasi lebih tinggi.
-
-## 📜 Lisensi
-
-Proyek ini berada di bawah lisensi MIT.
-
----
-
-Created by **Senta Fito Situmorang** - Politeknik Negeri Batam
