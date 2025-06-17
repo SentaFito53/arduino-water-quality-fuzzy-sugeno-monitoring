@@ -81,6 +81,8 @@ EXIT
 
 ### Kalibrasi pH
 
+The pH is computed using a linear model from two reference voltages
+
 1. Masukkan perintah berikut melalui Serial Monitor Arduino:
 
 ```
