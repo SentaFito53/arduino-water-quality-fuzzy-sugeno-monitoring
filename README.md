@@ -48,35 +48,26 @@ git clone https://github.com/SentaFito53/arduino-water-quality-fuzzy-sugeno-moni
 | LCD SDA          | SDA (20)         |
 | LCD SCL          | SCL (21)         |
 
-## 🔎 Tampilan di LCD
-
-Baris-baris LCD:
-
-1. pH: `7.00`
-2. Turb: `NTU: 120`
-3. TDS: `350 ppm`
-4. Qual: `BAIK`
-
-## ⚙️ Cara Kalibrasi Sensor
+## ⚙️ Cara Kalibrasi Sensor 
 
 ### Kalibrasi TDS
 
 1. Masukkan perintah berikut melalui Serial Monitor Arduino:
 
 ```
-ENTER
+ENTERTDS
 ```
 
-2. Celupkan probe ke larutan EC standar (misalnya 1413us/cm), kemudian kirim:
+2. Celupkan probe ke larutan standar (misalnya 1413 mg/L), kemudian kirim:
 
 ```
-CAL:1413
+CALTDS:1413
 ```
 
 3. Setelah muncul `>>>Calibration Successful!<<<`, simpan nilai:
 
 ```
-EXIT
+EXITTDS
 ```
 
 ### Kalibrasi pH
@@ -92,32 +83,55 @@ ENTERPH
 2. Celupkan probe ke buffer pH 7, lalu kirim:
 
 ```
-CALPH
+PH:<nilai ph>
 ```
 
-3. Ulangi dengan buffer pH 4, kirim lagi `CALPH`.
+3. Ulangi dengan buffer pH 4, kirim lagi `PH:<nilai ph>`.
 4. Setelah muncul pesan berhasil, simpan dengan:
 
 ```
 EXITPH
 ```
-
 > **Catatan:** Voltage pH 7 berada antara 1322-1678 mV dan pH 4 antara 1854-2210 mV.
 
-## 🧪 Contoh Output Serial
+
+### Kalibrasi Turbidity
+
+1. Masukkan perintah berikut melalui Serial Monitor Arduino:
 
 ```
-pH: 7.01
-TDS: 357 ppm
-EC: 0.58 ms/cm
-Turbidity: 121 NTU
+ENTERTURB
+```
+
+2. Celupkan sensor ke air jernih (kalibrasi titik pertama), lalu kirim:
+
+```
+TURB:<nilai turb>
+```
+
+3. Ulangi dengan air keruh (kalibrasi titik kedua), kirim lagi `TURB:<nilai turb>`.
+4. Setelah muncul pesan berhasil, simpan dengan:
+
+```
+EXITTURB
+```
+
+> **Catatan:** Kalibrasi harus dilakukan pada dua titik kalibrasi (dua kondisi kekeruhan air).
+
+## 🧪 Contoh Output LCD
+
+```
+pH   : 7.01
+Turb : 133 NTU
+TDS  : 100 ppm
+Qual : BAIK
 ```
 
 ## 🛠 Troubleshooting
 
 * Pastikan semua sensor mendapat tegangan yang sesuai (5V).
 * Jika data tampak tidak sesuai, ulangi proses kalibrasi.
-* Gunakan cairan standar pH dan EC untuk akurasi lebih tinggi.
+* Gunakan cairan standar pH dan TDS untuk akurasi lebih tinggi.
 
 ## Fungsi Keanggotaan Fuzzy
 ![Fungsi Keanggotaan Fuzzy](https://github.com/SentaFito53/arduino-water-quality-fuzzy-sugeno-monitoring/blob/main/Fungsi%20Keanggotaan.png)
