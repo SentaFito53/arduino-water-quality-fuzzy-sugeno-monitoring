@@ -53,9 +53,9 @@ git clone https://github.com/SentaFito53/arduino-water-quality-fuzzy-sugeno-moni
 Baris-baris LCD:
 
 1. pH: `7.00`
-2. TDS: `350 ppm`
-3. EC: `0.54 ms/cm`
-4. Turbidity: `NTU: 120`
+2. Turb: `NTU: 120`
+3. TDS: `350 ppm`
+4. Qual: `BAIK`
 
 ## ⚙️ Cara Kalibrasi Sensor
 
